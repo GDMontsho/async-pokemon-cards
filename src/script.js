@@ -26,6 +26,7 @@ function displayPokemonChar(pokemon) {
   pokemonCard.classList.add("card");
 
   const pokemonName = document.createElement("p");
+  pokemonName.classList.add("pokemonName");
   pokemonName.textContent =
     pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
   pokemonCard.appendChild(pokemonName);
