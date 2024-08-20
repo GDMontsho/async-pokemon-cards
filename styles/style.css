@@ -54,7 +54,7 @@ p {
   font-weight: 400;
   font-size: 1.6rem;
   text-align: center;
-  color: #777777;
+  color: #0059ff;
 }
 
 input,
@@ -67,7 +67,7 @@ button {
   letter-spacing: 2px;
   cursor: pointer;
   color: #fccd3d;
-  background-color: rgb(0, 89, 255);
+  background-color: #0059ff;
   border: 1px solid #909023;
 }
 
@@ -76,4 +76,9 @@ input {
   cursor: text;
   outline: none;
   text-indent: 0.5rem;
+  color: #fccd3d;
+}
+input::placeholder {
+  font-style: italic;
+  color: #fccd3d;
 }
