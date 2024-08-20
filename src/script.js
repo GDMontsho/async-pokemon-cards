@@ -43,7 +43,21 @@ function displayPokemonChar(pokemon) {
     abilityEl.textContent = ability.ability.name;
     abilities.appendChild(abilityEl);
   });
+
   pokemonCard.appendChild(abilities);
+
+  const stats = document.createElement("div");
+  stats.classList.add("stats");
+  stats.innerHTML = `<p><b>Pokémon Stats:</b></p>`;
+
+  pokemon.stats.forEach((stat) => {
+    console.log(stat);
+    const statEl = document.createElement("p");
+    statEl.textContent = `${stat.stat.name}: ${stat.base_stat}`;
+    stats.appendChild(statEl);
+  });
+
+  pokemonCard.appendChild(stats);
 
   container.appendChild(pokemonCard);
 }
